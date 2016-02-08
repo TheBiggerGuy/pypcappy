@@ -1,0 +1,13 @@
+sudo: false
+language: python
+python:
+  - 3.2
+  - 3.3
+  - 3.4
+  - 3.5
+  - "pypy"
+cache: pip
+install:
+  - pip install --user -r requirements.txt
+script:
+  - "py.test ."
