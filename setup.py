@@ -6,7 +6,7 @@ import os
 setup(
     name = 'pypcappy',
     packages = ['pypcappy', 'pypcappy.blocks'], 
-    version = '0.0.1',
+    version = '0.0.1b',
     description = 'Pure Python3 PcapNg reader',
     long_description = open(os.path.join(os.path.dirname(__file__), 'README.md')).read(),
     author = 'Guy Taylor',
@@ -18,7 +18,7 @@ setup(
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python'
+        'Programming Language :: Python',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy'
