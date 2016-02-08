@@ -9,8 +9,6 @@ cache: pip
 install:
   - pip install -r requirements.txt
 script:
-  - "py.test"
+  - py.test --cov=pypcappy
 after_success:
-  - if [[ $ENV == python=3.4* ]]; then
-      coveralls;
-    fi
+  - coveralls
