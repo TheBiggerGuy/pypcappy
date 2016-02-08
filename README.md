@@ -3,6 +3,7 @@ PyPcapPy
 **A Pure Python3 PcapNg reader**
 
 [![Build Status](https://travis-ci.org/TheBiggerGuy/pypcappy.svg?branch=master)](https://travis-ci.org/TheBiggerGuy/pypcappy)
+[![Coverage Status](https://coveralls.io/repos/github/TheBiggerGuy/pypcappy/badge.svg?branch=master)](https://coveralls.io/github/TheBiggerGuy/pypcappy?branch=master)
 [![Requirements Status](https://requires.io/github/TheBiggerGuy/pypcappy/requirements.svg?branch=master)](https://requires.io/github/TheBiggerGuy/pypcappy/requirements/?branch=master)
 
 Use
