@@ -13,10 +13,10 @@ with PcapNgFile('file_name.pcapng.gz') as pcap_file:
 Why not pypcap or pypcapfile?
 =============================
 * Pure python
-** Will work on CPython, PyPy, Jpython or whatever
+ * Will work on CPython, PyPy, Jpython or whatever
 * Python 3
-** No legacy packet data as strings
+ * No legacy packet data as strings
 * PcapNG
-** Only support for the new *next gen* format
+ * Only support for the new *next gen* format
 * Gzip
-** Build in support for both *.pcapng and *.pcapng.gz files
+ * Build in support for both *.pcapng and *.pcapng.gz files
