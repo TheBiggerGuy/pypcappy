@@ -2,6 +2,8 @@ PyPcapPy
 ========
 **A Pure Python3 PcapNg reader**
 
+[![Build Status](https://travis-ci.org/TheBiggerGuy/pypcappy.svg?branch=master)](https://travis-ci.org/TheBiggerGuy/pypcappy)
+
 Use
 ===
 ```python
