@@ -6,7 +6,7 @@ if sys.version_info < (3,):
     sys.exit(-1)
 
 __title__ = 'pypcappy'
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 __author__ = 'Guy Taylor'
 
 from .pcapNgFile import PcapNgFile

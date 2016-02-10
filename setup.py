@@ -40,7 +40,7 @@ setup(
     author_email = 'thebigguy.co.uk@gmail.com',
     url = 'https://github.com/TheBiggerGuy/pypcappy',
     packages = find_packages(exclude=['docs', 'tests']),
-    package_data={'': ['LICENSE']},
+    package_data={'': ['LICENSE', 'README.md']},
     install_requires=[],
     keywords = ['pcap'], 
     license = 'MIT',
