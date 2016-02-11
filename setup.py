@@ -41,6 +41,7 @@ setup(
     url = 'https://github.com/TheBiggerGuy/pypcappy',
     packages = find_packages(exclude=['docs', 'tests']),
     package_data={'': ['LICENSE', 'README.md']},
+    zip_safe=False,
     install_requires=[],
     keywords = ['pcap'], 
     license = 'MIT',
