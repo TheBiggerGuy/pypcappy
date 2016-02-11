@@ -6,12 +6,28 @@ if sys.version_info < (3,):
     sys.exit(-1)
 
 
-# Always prefer setuptools over distutils
-from setuptools import setup, find_packages
 # To use a consistent encoding
 from codecs import open
 from os import path, system
 import re
+import sys
+
+# Always prefer setuptools over distutils
+from setuptools import setup, find_packages
+from setuptools.command.test import test as TestCommand
+
+class PyTest(TestCommand):
+    user_options = [('pytest-args=', 'a', "Arguments to pass to py.test")]
+
+    def initialize_options(self):
+        TestCommand.initialize_options(self)
+        self.pytest_args = []
+
+    def run_tests(self):
+        #import here, cause outside the eggs aren't loaded
+        import pytest
+        errno = pytest.main(self.pytest_args)
+        sys.exit(errno)
 
 
 if sys.argv[-1] == 'publish':
@@ -43,6 +59,8 @@ setup(
     package_data={'': ['LICENSE', 'README.md']},
     zip_safe=False,
     install_requires=[],
+    tests_require=['pytest'],
+    cmdclass = {'test': PyTest},
     keywords = ['pcap'], 
     license = 'MIT',
     classifiers = (
