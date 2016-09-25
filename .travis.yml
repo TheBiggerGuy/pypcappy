@@ -16,12 +16,20 @@ after_success:
 before_deploy:
 - python3 setup.py sdist
 deploy:
-  provider: releases
+- provider: releases
   api_key:
     secure: sojyaKcRNP5ULqOFQ7rJHONkBVwJQieWmNNwyrckHDw3tFi5FGjoDmbXHDNu4FiAq28Rby/foqRfs42VYRXq3XVkDVNiEEpmXnVX+vHCJu9AnZG3HRJO7e46dkerZCBvSMbCOIfuCLexlD0mjmxoM9tfupFeOKFS299qjYJG2xx9z7h5EIurMmiEXMi5XU/YJ6pABC41olzmDymxlI3FDY83v3iYA9VRwRSrRKQQF/1gbZoeNMP3RbdfLLvZxe4SCraBBh0LX6paDvn6Wam2UzmnnRvP8vqc5xoEOKyUpaehTTnzIFh0TNxzIO5WFvZmJ89050e4pqGgu1mdiQCMeM6CX+HeEH0+y4a8m0UohE2ksOIxOQrZgp7u0QSFDpy6x5lw0q3qZoZiaDEDeZT5JYmttBiB6YznN2DWTvhfaSF5YnYWJZaJYlVPOWqHx60tfPxD9lqkNwIZFAYbDe1WjvxlUxjf9E9w2Vl4VQ26zeP15ov0Z4CMNskh9GsCwMLX5dpveHXvHBodHDSX8Mgbaiuc8TKj+tXZhv744vBtDzTAtBKss/skTMKlH8ePOrugQmdJdiZtNNR816MRAaZnITo7guq50lQn3hLEzhXHYaXt6BKhpVRFCjk7AjhERoQqGC6mbRpwVV5a1Ueoz8ES8DDIFX+SSjMW73MRjfIUUl4=
   file_glob: true
   file: dist/pypcappy-*.tar.gz
   skip_cleanup: true
+  on:
+    repo: TheBiggerGuy/pypcappy
+    tags: true
+    branch: master
+- provider: pypi
+  user: TheBiggerGuy
+  password:
+    secure: LXKgwFsqw8hfdTxXjckmEfPZEGutU3YUhngCIg/OXmU9EsBQOVEZV6FZpABACt78EnKFcQDT39WOaIfIAJ3OzDFoSCiTOsrLlT8A+OCjZnkduyXqpx3ypiwf9dJsOu5+lE+5J15yYEeA08VAMtvvpJ5wnRSv1ggX5q20XH2dEso0MU+7x3mo3B32ADYaXttjMWSFdx0OlM1sSJwooA4sXLkAopTX33GeCcuSt46fOHK9EJvvbKwWCoI0C5khCK8gBdRW8AeJTeE22vdj0UHmAY/bammjIP90yLuiQGMqwHmmLs0vnqcKHEDvi68bqA3aOhihghlzvOMap0t7FZfeB5ds7Otik8yOXPN5HfJvFA8zif2FVrybe1ZFxT/lLFI8jgoqSI1tCGKodO0+MsRIOIs6MKCsFlNC1XkwHnZasOrS7Fx4XmjQmBjmr+HtCVsWcC2Z2Z2oZgtkBIYU0XXnUZRmCOOEVxe4F//+nrqJSGzh9F4FUMw9h22XaTuaII4kzZeV9Yy4ui1dI0irSqB8+O7bcp+fSDQT5816pboKnPFqXnrnfMJ7RIH9KT6jJ38x6/MqJRUHBWzzLMXhuzK3Dm8OAXWo6VnKuKorIM6qhFcXhRkrhr14QHL+tn17hJVkA3G98EBMtF//rk4P/j6F/74OloBqzdAUASH7fYnklU0=
   on:
     repo: TheBiggerGuy/pypcappy
     tags: true
