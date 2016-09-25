@@ -24,6 +24,11 @@ Why not pypcap or pypcapfile?
  * Only support for the new *next gen* format
 * Gzip
  * Build in support for both *.pcapng and *.pcapng.gz files
+ 
+Downloads
+=========
+* Source tar.gz via [GitHub](https://github.com/TheBiggerGuy/pypcappy/releases/latest)
+* [PyPI](https://pypi.python.org/pypi/pypcappy)
 
 Links
 =====
