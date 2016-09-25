@@ -24,3 +24,7 @@ Why not pypcap or pypcapfile?
  * Only support for the new *next gen* format
 * Gzip
  * Build in support for both *.pcapng and *.pcapng.gz files
+
+Links
+=====
+* http://www.winpcap.org/ntar/draft/PCAP-DumpFileFormat.html
