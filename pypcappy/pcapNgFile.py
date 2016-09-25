@@ -40,7 +40,7 @@ class BlockInterator(object):
         byteorder_big = int.from_bytes(byteorder_magic, byteorder='big', signed=False)
         if byteorder_little == 0x1A2B3C4D:
             self._current_byteorder = 'little'
-        elif byteorder_little == 0x1A2B3C4D:
+        elif byteorder_big == 0x1A2B3C4D:
             self._current_byteorder = 'big'
         else:
             raise Exception('Invalid SectionHeaderBlock Byte-order Magic')
