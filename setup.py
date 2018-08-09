@@ -52,6 +52,7 @@ setup(
     version = version,
     description = 'Pure Python3 PcapNg reader',
     long_description = long_description,
+    long_description_content_type = 'text/markdown',
     author = 'Guy Taylor',
     author_email = 'thebigguy.co.uk@gmail.com',
     url = 'https://github.com/TheBiggerGuy/pypcappy',
