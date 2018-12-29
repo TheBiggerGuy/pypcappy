@@ -6,6 +6,7 @@ PyPcapPy
 [![Coverage Status](https://coveralls.io/repos/github/TheBiggerGuy/pypcappy/badge.svg?branch=master)](https://coveralls.io/github/TheBiggerGuy/pypcappy?branch=master)
 [![Requirements Status](https://requires.io/github/TheBiggerGuy/pypcappy/requirements.svg?branch=master)](https://requires.io/github/TheBiggerGuy/pypcappy/requirements/?branch=master)
 [![PyPI version](https://badge.fury.io/py/pypcappy.svg)](https://badge.fury.io/py/pypcappy)
+(![Coverity Scan Build Status](https://scan.coverity.com/projects/17546/badge.svg)](https://scan.coverity.com/projects/thebiggerguy-pypcappy)
 
 Use
 ===
